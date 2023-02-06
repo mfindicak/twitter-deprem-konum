@@ -1,3 +1,6 @@
+This project pulls the latest earthquake related tweets from Twitter and displays the tweets containing addresses on a map. 
+It uses Twitter Api and Google Geocoding API.
+
 # Example
 ![Example](https://github.com/mfindicak/twitter-deprem-konum/blob/main/images/example.png?raw=true)
 
