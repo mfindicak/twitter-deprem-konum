@@ -4,9 +4,11 @@ It uses Twitter Api and Google Geocoding API.
 
 Tech Stack: Angular, NestJS.
 
-# Screenshot
+# Screenshots
 
-![Screenshot](https://github.com/mfindicak/twitter-deprem-konum/blob/main/images/example.png?raw=true)
+![Screenshot1](https://github.com/mfindicak/twitter-deprem-konum/blob/main/images/example.png?raw=true)
+
+![Screenshot2](https://github.com/mfindicak/twitter-deprem-konum/blob/main/images/example2.png?raw=true)
 
 # Usage
 
