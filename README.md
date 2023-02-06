@@ -1,33 +1,17 @@
-This project pulls the latest earthquake related tweets from Twitter and displays the tweets containing addresses on a map. 
+This project pulls the latest earthquake related tweets from Twitter and displays the tweets containing addresses on a map.
+
 It uses Twitter Api and Google Geocoding API.
 
-# Example
-![Example](https://github.com/mfindicak/twitter-deprem-konum/blob/main/images/example.png?raw=true)
+Tech Stack: Angular, NestJS.
 
-# DepremWeb
+# Screenshot
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.4.
+![Screenshot](https://github.com/mfindicak/twitter-deprem-konum/blob/main/images/example.png?raw=true)
 
-## Development server
+# Usage
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run `npm install` command for each api and app folders.
 
-## Code scaffolding
+Create .env file in api folder and put Twitter and Google Maps Api Key.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Then run `npm start` command for each api and app folders.

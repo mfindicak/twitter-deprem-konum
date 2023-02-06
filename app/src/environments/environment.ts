@@ -4,8 +4,7 @@
 
 export const environment = {
   production: false,
-  apiKey: '',
-  twitterApiKey: '',
+  apiUrl: 'http://localhost:3000',
 };
 
 /*
