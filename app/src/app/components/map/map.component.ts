@@ -36,7 +36,7 @@ export class MapComponent implements AfterViewInit, OnInit {
   }
 
   start = async () => {
-    this.mapService.getLocations('deprem').then((locations) => {
+    this.mapService.getLocations('mah apt -is:retweet').then((locations) => {
       locations.map((location) => {
         L.marker([location.data.lat, location.data.lng])
           .addTo(this.map)
