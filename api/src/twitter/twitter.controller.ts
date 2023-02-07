@@ -1,4 +1,4 @@
-import { Body, Controller, Post } from '@nestjs/common';
+import { Body, Controller, Get, Post } from '@nestjs/common';
 import { SearchTweetDto } from './dto/search-tweet';
 import { TwitterService } from './twitter.service';
 
@@ -11,8 +11,8 @@ export class TwitterController {
     return this.twitterService.searchTweets(body);
   }
 
-  @Post('/location')
-  searchLocation(@Body() body: SearchTweetDto) {
-    return this.twitterService.searchLocation(body);
+  @Get('/location')
+  searchLocation() {
+    return this.twitterService.searchLocation();
   }
 }

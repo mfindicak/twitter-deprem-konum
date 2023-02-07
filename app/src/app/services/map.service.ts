@@ -47,16 +47,21 @@ export class MapService {
       });
   };
 
-  getLocations = async (
-    query: string
-  ): Promise<{ address: string; data: { lat: number; lng: number } }[]> => {
+  getLocations = async (): Promise<
+    {
+      tweetId: string;
+      tweet: string;
+      lat: number;
+      lng: number;
+      tweetDate: Date;
+    }[]
+  > => {
     return fetch(environment.apiUrl + '/twitter/location', {
-      method: 'POST',
+      method: 'GET',
       headers: {
         Accept: 'application/json',
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ query }),
     })
       .then((response) => response.json())
       .then((data) => {

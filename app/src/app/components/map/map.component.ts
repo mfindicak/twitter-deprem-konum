@@ -36,11 +36,21 @@ export class MapComponent implements AfterViewInit, OnInit {
   }
 
   start = async () => {
-    this.mapService.getLocations('mah apt -is:retweet').then((locations) => {
-      locations.map((location) => {
-        L.marker([location.data.lat, location.data.lng])
+    this.mapService.getLocations().then((tweets) => {
+      tweets.map((tweet) => {
+        L.marker([tweet.lat, tweet.lng])
           .addTo(this.map)
-          .bindPopup(location.address)
+          .bindPopup(
+            `<div><a href="https://twitter.com/user/status/${tweet.tweetId}">${
+              tweet.tweet
+            }<a><p>${new Date(tweet.tweetDate).toLocaleString('tr-TR', {
+              day: 'numeric',
+              month: 'short',
+              year: 'numeric',
+              hour: 'numeric',
+              minute: '2-digit',
+            })}</p><div>`
+          )
           .openPopup();
       });
     });

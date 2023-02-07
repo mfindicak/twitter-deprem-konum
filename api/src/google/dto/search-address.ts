@@ -1,7 +1,15 @@
-import { IsArray, IsString } from 'class-validator';
+import { IsDateString, IsString } from 'class-validator';
 
 export class SearchAddressDto {
-  @IsArray()
-  @IsString({ each: true })
-  addresses: string[];
+  @IsString()
+  author_id: string;
+
+  @IsString()
+  text: string;
+
+  @IsString()
+  id: string;
+
+  @IsDateString()
+  created_at: Date;
 }
